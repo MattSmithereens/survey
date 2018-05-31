@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+   <link href="css/styles.css" rel="stylesheet" type="text/css">
+   <script src="js/jquery-3.3.1.js"></script>
+   <script src="js/scripts.js"></script>
+  <title>Survey!</title>
+</head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>COOLEST SURVEY EVER</h1>
+      </div>
+<!-- name -->
+      <form id="name">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+      </form>
+      <br>
+  <!-- dropdown -->
+      <p>Your favorite drinks</p>
+      <form id="dropdown" action="index.html" method="post">
+        <select class="form-control" id="beverage">
+          <option value="coffee">Coffee</option>
+          <option value="tea">Tea</option>
+          <option value="kombucha">Kombucha</option>
+          <option value="water">Water</option>
+        </select>
+      </form>
+      <br>
+<!-- checkbox/flavors -->
+      <p>Your favorite ice cream flavor</p>
+      <form id="buttons" action="index.html" method="post">
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" value="chocolate" checked>
+            Chocolate
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" value="vanilla">
+            Vanilla
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" value="cookiesandcream">
+            Cookies & Cream
+          </label>
+        </div>
+      </form>
+      <br>
+<!-- date -->
+      <form id="DOB" action="index.html" method="post">
+        <div class="form-group">
+          <label for="born">Date of birth:</label>
+          <input id="born" class="form-control" type="date">
+        </div>
+      </form>
+      <br>
+<!-- color -->
+      <form id="color" action="index.html" method="post">
+        <div class="form-group">
+          <label for="color">What is your favorite color?</label>
+          <input id="color" class="form-control" type="color">
+        </div>
+      </form>
+      </div>
+    </div>
+  </body>
+</html>
