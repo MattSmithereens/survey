@@ -8,6 +8,7 @@ $(document).ready(function(){
     var zipName= $("input#zipInput").val();
     var emailName= $("input#emailInput").val();
 
+    $("ul#user").prepend("<li>Hello!</li>");
     $(".nameInput").text(fullName);
     $(".streetInput").text(streetName);
     $(".cityInput").text(cityName);
@@ -15,5 +16,17 @@ $(document).ready(function(){
     $(".emailInput").text(emailName);
 
     event.preventDefault();
+
+
+  $("button#hello").click(function() {
+    $("ul#user").prepend("<li>Hello!</li>");
+    $("ul#webpage").prepend("<li>Why hello there!</li>");
+    $("ul#user").children("li").first().click(function() {
+      $(this).remove();
+      });
+    $("ul#webpage").children("li").first().click(function() {
+      $(this).remove();
+      });
+    });
   });
 });
